@@ -6,13 +6,20 @@ Looks for `swiftgen.yml` in the root of Xcode Project or Swift Package.
 
 Generated files are saved in the `Generated` directory.
 
-### Info
+
+## Info
 
 - SwiftGen Version: 6.6.2
 - SwiftGen Repo: https://github.com/SwiftGen/SwiftGen/
 
 
-### Usage in Xcode Project
+## Requirements
+
+- macOS version 10.15 Catalina
+- Swift 5.7
+
+
+## Add to Xcode Project
 
 1. Add this repo https://github.com/5amdotis/5AMSwiftGen as Swift Package to your project
 2. Add `SwiftGenPlugin` to Run Build Tool Plug-ins in Build Phases
@@ -21,7 +28,7 @@ Generated files are saved in the `Generated` directory.
 5. For CI/CD: add option `-skipPackagePluginValidation` to `xcodebuild` command
 
 
-### Usage in Swift Package
+## Add to Swift Package
 
 1. Add dependency
 ``` 
@@ -45,6 +52,6 @@ targets: [
 3. Build package
 
 
-### License
+## License
 
-See LICENSE.md
+5AMSwiftGen is licenced under [BSD 3-Clause License](LICENSE.md).
